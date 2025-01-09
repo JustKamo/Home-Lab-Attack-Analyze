@@ -1,6 +1,4 @@
-<h1>Home-Lab-Attack-Analyze</h1>
-
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+<h1>Home-Lab:Attack & MalwareAnalyses</h1>
 
 <h2>Description</h2>
 Designed a homelab with two virtual machines: an attacker machine(Kali Linux) and a defender machine (Windows with Splunk as the SIEM). Developed a custom malware payload disguised as "CV.pdf.exe" using Kali Linux, performed port scanning with nmap and successfully executed remote commands on the Windows machine. Monitored the attack using Sysmon and Splunk analyzing the malicious activity and identifying indicators of compromise. Mapped observed techniques to the MITRE ATT&CK framework and strategies to enhance the defense mechanisms<br />
@@ -16,13 +14,13 @@ Designed a homelab with two virtual machines: an attacker machine(Kali Linux) an
 <h2>Project walk-through:</h2>
 
 <p align="center">
- <h3>Launch the WMare:</h3> <br/>
+ <h3>Launch the WMare and configure the machines to Internal Network(putting the machines in their own network) to avoid any malware incidents affecting the host machine:</h3> <br/>
 <img src="https://i.imgur.com/BefFlTC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
   <img src="https://i.imgur.com/Yb3lVBl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
- <h3>Create payload Malware on Kali using this command: </h3> <br/>
+ <h3>Create payload Malware on Kali using this command and save the it as CV.pdf.exe: </h3> <br/>
 <img src="https://i.imgur.com/LSeHVZP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
