@@ -8,55 +8,72 @@ Designed a homelab with two virtual machines: an attacker machine(Kali Linux) an
 
 <h2>Environments Used </h2>
 
-- <b>VMWare</b> (21H2)
-- <b>Windows 10 media tool</b> (21H2)
-- <b>Kali Linux</b> (21H2)
-- <b>Splunk</b> (21H2)
+- <b>VMWare</b> 
+- <b>Windows 10 media tool</b> 
+- <b>Kali Linux</b> 
+- <b>Splunk</b> 
   
 <h2>Project walk-through:</h2>
 
 <p align="center">
-Launch the WMare: <br/>
+ <h3>Launch the WMare:</h3> <br/>
 <img src="https://i.imgur.com/BefFlTC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
- <img src="https://i.imgur.com/Yb3lVBl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/Yb3lVBl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-Create Malware using Kali Linux:  <br/>
+<br />
+ <h3>Create payload Malware on Kali using this command: </h3> <br/>
 <img src="https://i.imgur.com/LSeHVZP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Set up handler to start listening from Attacker machine: <br/>
+ <h3>Set up handler to start listening from Attacker machine:</h3> <br/>
 <img src="https://i.imgur.com/rGNuLUJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-This will allow the person on the end of the target machine to download the malware from the attacker:  <br/>
+ <h3>This will allow the person on the end of the target machine to download the malware from the attacker: </h3> <br/>
 <img src="https://i.imgur.com/0OCGmLU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Download Malware:  <br/>
+ <h3>Download Malware from the Windows machine:</h3>  <br/>
 <img src="https://i.imgur.com/7vb57TR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Open windows shell from Kali:  <br/>
+ <h3>Once the RDP(Remote Desktop Protocol) connection is setup, Open the shell to start running commands:</h3>  <br/>
 <img src="https://i.imgur.com/J3rxXie.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Run Commands:  <br/>
+ <h3>Run Commands: </h3> <br/>
 <img src="https://i.imgur.com/XKmzA2l.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <img src="https://i.imgur.com/XKmzA2l.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+<br />
+  <h3>The IP address returned is that of the target machine:</h3>  <br/>
  <img src="https://i.imgur.com/or37ICu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
- Go to windows,Open Splunk and start searching the endpoint for the malware saved as CV.pdf.exe:  <br/>
+<br />
+
+ <h2>SIEM Analyses:</h2>
+
+ <p align="center">
+  <h3>Go to windows,Open Splunk and start searching the endpoint for the malware saved as CV.pdf.exe:</h3>  <br/>
 <img src="https://i.imgur.com/O5MVIZW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
- Expand the results and copy the process id:  <br/>
+<br />
+ <h3> Expand the results and copy the process id: </h3> <br/>
 <img src="https://i.imgur.com/oOJbS7Q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
- Search using the process id to do some telementry.The command lines used are revealed and technique id:  <br/>
+  <h3>Search using the process id to do some telementry.The command lines used are revealed and technique id: </h3> <br/>
  <img src="https://i.imgur.com/LgBRmnK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+<br />
+  <h3>Attack Techniques revealed:</h3>  <br/>
+ <img src="https://i.imgur.com/tTcEQtX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />  
+<img src="https://i.imgur.com/3mwAM8t.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />  
+<img src="https://i.imgur.com/AmqmpzA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />  
 </p>
 
 <!--
