@@ -21,28 +21,42 @@ Launch the WMare: <br/>
 <br />
  <img src="https://i.imgur.com/Yb3lVBl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create Malware using Kali Linux:  <br/>
+<img src="https://i.imgur.com/LSeHVZP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Set up handler to start listening from Attacker machine: <br/>
+<img src="blob:https://imgur.com/f9234261-d454-480b-b292-d74af5fa2583" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+This will allow the person on the end of the target machine to download the malware from the attacker:  <br/>
+<img src="https://i.imgur.com/0OCGmLU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Download Malware:  <br/>
+<img src="https://i.imgur.com/7vb57TR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Open windows shell from Kali:  <br/>
+<img src="https://i.imgur.com/J3rxXie.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Run Commands:  <br/>
+<img src="https://i.imgur.com/XKmzA2l.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<img src="https://i.imgur.com/XKmzA2l.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+ <img src="https://i.imgur.com/or37ICu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+ Go to windows,Open Splunk and start searching the endpoint for the malware saved as CV.pdf.exe:  <br/>
+<img src="https://i.imgur.com/O5MVIZW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+ Expand the results and copy the process id:  <br/>
+<img src="https://i.imgur.com/oOJbS7Q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+ Search using the process id to do some telementry.The command lines used are revealed and technique id:  <br/>
+ <img src="https://i.imgur.com/LgBRmnK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
 </p>
 
 <!--
