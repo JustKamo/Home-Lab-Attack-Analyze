@@ -26,7 +26,7 @@ Create Malware using Kali Linux:  <br/>
 <br />
 <br />
 Set up handler to start listening from Attacker machine: <br/>
-<img src="blob:https://imgur.com/f9234261-d454-480b-b292-d74af5fa2583" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/rGNuLUJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 This will allow the person on the end of the target machine to download the malware from the attacker:  <br/>
