@@ -1,4 +1,4 @@
-<h1>Home-Lab:Attack & MalwareAnalyses</h1>
+<h1>Home-Lab:Attack & Malware Analyses</h1>
 
 <h2>Description</h2>
 Designed a homelab with two virtual machines: an attacker machine(Kali Linux) and a target machine (Windows with Splunk as the SIEM). Developed a custom malware payload disguised as "CV.pdf.exe" using Kali Linux, performed port scanning with nmap and successfully executed remote commands on the Windows machine. Monitored the attack using Sysmon and Splunk analyzing the malicious activity and identifying indicators of compromise. Mapped observed techniques to the MITRE ATT&CK framework and strategies to enhance the defense mechanisms<br />
@@ -32,9 +32,18 @@ Designed a homelab with two virtual machines: an attacker machine(Kali Linux) an
 <img src="https://i.imgur.com/0OCGmLU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+  <h3>Go to Windows Security and turn off real time protection to be able to download the malware:</h3>  <br/>
+<img src="https://i.imgur.com/fcnhkij.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
  <h3>Download Malware from the Windows machine:</h3>  <br/>
 <img src="https://i.imgur.com/7vb57TR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+<br />
+  <h3>The malware to someone that is not tech sevy would assume it is a regular pdf file. Until you go to to view and turn on file name extension details:</h3>  <br/>
+<img src="https://i.imgur.com/CAYdFOA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+  <img src="https://i.imgur.com/PNn1A8o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
  <h3>Once the RDP(Remote Desktop Protocol) connection is setup, Open the shell to start running commands:</h3>  <br/>
 <img src="https://i.imgur.com/J3rxXie.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
